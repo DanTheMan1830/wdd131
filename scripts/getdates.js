@@ -1,7 +1,6 @@
-const currentyear = document.querySelector("#currentyear");
+const copyrightYear = document.getElementById('currentyear');
+const currentYear = new Date().getFullYear();
 
-const today = Date.now();
+copyrightYear.textContent = currentYear;
 
-console.log(today.getFullYear());
 
-currentyear.innerHTML = 'getDay(): <span id="currentyear">${today.getDay()}</span>';
