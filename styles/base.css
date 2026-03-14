@@ -71,9 +71,11 @@ a {
 
 main {
     max-width: 840px;
+    min-width: 840px;
     display: grid;
     grid-template-rows: auto 1fr;
     grid-template-columns: 2fr 1fr;
+    justify-self: center;
 }
 
 main h1 {
@@ -88,4 +90,8 @@ section {
     border-radius: .4rem;
     padding: 2rem;
     margin: .4rem;
+}
+
+footer {
+    justify-self: center;
 }
