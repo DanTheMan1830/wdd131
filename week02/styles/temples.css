@@ -1,0 +1,197 @@
+:root {
+    --primary-color: #b6e6fb;
+    --secondary-color: #2B4162;
+    --accent1-color: #582707;
+    --accent2-color: #CCAD8F;
+    --heading-font: "Palatino", serif;
+    --body-font: "Bahnschrift", sans-serif;
+    --light-text: #fff;
+
+    --header-color: #690500;
+    --navigation-color: #452103;
+    --hover-color: #BFC3BA;
+}
+
+.slabo-27px-regular {
+    font-family: "Slabo 27px", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.geist-dannyboy {
+    font-family: "Geist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    font-family: "Slabo 27px" serif;
+}
+
+/* basic **************************/
+header {
+    font-family: "Slabo 27px" serif;
+    background-color: var(--header-color);
+    display: grid;
+    grid-gap: 1rem;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 30px #333;
+}
+
+header h1 {
+    color: white;
+}
+
+header,
+main {
+    margin: 0 auto;
+}
+
+nav {
+    background-color: var(--navigation-color);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    font-family: "Slabo 27px" serif;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+nav a:hover {
+    text-decoration: wavy;
+    font-style: italic;
+    background-color: var(--hover-color);
+    color: black;
+    font-weight: 700;
+}
+
+/* Larger Views ******************************/
+@media (min-width: 740px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    nav ul {
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+
+    nav a {
+        flex: 1 1 100%;
+    }
+}
+
+/* End of Basic Header ********************************/
+
+/* Hamburger Stuff ***********************************/
+
+@media (max-width: 740px) {
+
+    #menu {
+        font-size: 2.1rem;
+        border: 0;
+        background: none;
+        color: #000;
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+    }
+
+    #menu::before {
+        content: "☰";
+        color: white;
+    }
+
+    #menu.open::before {
+        content: "✖";
+        color: white;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        list-style: none;
+        background-color: var(--navigation-color);
+        color: #fff;
+    }
+
+    .navigation a {
+        display: none;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+
+    }
+
+    .navigation a:hover {
+        background-color: var(--hover-color);
+        color: black;
+    }
+
+    .open a {
+        display: block;
+    }
+
+}
+
+/* main stuff ***********************************/
+
+main {
+    font-family: "geist-dannyboy", sans-serif;
+    margin: 1rem auto;
+    max-width: 1200px;
+    padding: 0.5rem;
+}
+
+div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-gap: 25px;
+    place-items: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin: 0.2rem;
+}
+
+figcaption {
+    font-size: .9rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.4rem;
+    padding: .4rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.1rem;
+    padding: .4rem;
+    margin-bottom: .5rem;
+    text-align: center;
+}
