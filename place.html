@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page | Week 03</title>
+    <meta name="description" content="week 3 assignment, displaying country for several viewports.">
+    <meta name="author" content="Daniel Lyon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Hepta+Slab:wght@1..900&family=Roboto&family=Slabo+27px&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1><span id="site-title">Utah</span></h1>
+    </header>
+    <main>
+        <div class="background">
+
+            <div class="hero">
+                <picture>
+                    <source srcset="images/utah-larger-hero.webp" media="(min-width:800px)">
+                    <img src="images/utah-mobile-hero.webp" alt="utah desert">
+                </picture>
+
+            </div>
+
+            <section class="dataContainer">
+                <h2>Data</h2>
+                <ul class="label">
+                    <li>Area:</li>
+                    <li>Population:</li>
+                    <li>Capital:</li>
+                    <li>Nickname:</li>
+                    <li>Official&nbsp;Language:</li>
+                    <li>Time Zone:</li>
+                    <li>State Bird:</li>
+                </ul>
+                <ul class="value">
+                    <li>84,898 sq miles</li>
+                    <li>3,503,613</li>
+                    <li>Salt Lake City</li>
+                    <li>Beehive State</li>
+                    <li>English</li>
+                    <li>MST (UTC-7)</li>
+                    <li>California Seagull</li>
+
+                </ul>
+
+            </section>
+
+            <section class="weatherContainer">
+                <img src="images/weather-svgrepo-com.svg" alt="weather icon" class="weather">
+                <h2 class="weather">Weather</h2>
+                <h2 class="weather-large">Weather ⛅</h2>
+                <ul class="label">
+                    <li>Temperature:</li>
+                    <li>Conditions:</li>
+                    <li>Wind:</li>
+                    <li>Wind Chill:</li>
+                </ul>
+                <ul class="value">
+                    <li><span id="displayTemperature">73</span>°</li>
+                    <li>Partly Cloudy</li>
+                    <li><span id="displayWindSpeed">13</span> mph</li>
+                    <li><span id="displayWindChill"></span> mph</li>
+                </ul>
+
+            </section>
+        </div>
+
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> Daniel Lyon UT</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

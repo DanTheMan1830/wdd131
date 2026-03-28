@@ -1,0 +1,151 @@
+:root {
+    --light-text: #fff;
+    --header-color: #690500;
+    --navigation-color: #452103;
+    --hover-color: #7c5605;
+    --main-backgrond-color: aliceblue;
+
+    --utah-flag-blue: #0e1e40;
+    --utah-flag-red: #ce152b;
+    --utah-flag-yellow: #ffb718;
+}
+
+.geist-dannyboy {
+    font-family: "Geist", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.slabo-27px-regular {
+    font-family: "Slabo 27px", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+main,
+footer {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid #555;
+    border-radius: .1rem;
+    background-color: var(--main-backgrond-color);
+    margin: .2rem auto;
+}
+
+header {
+    font-family: "slabo-27px-regular", serif;
+    background-color: var(--utah-flag-red);
+    display: grid;
+    grid-gap: 1rem;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 30px #333;
+    color: var(--light-text);
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+}
+
+
+footer {
+    font-size: 1rem;
+    font-family: "slabo-27px-regular", serif;
+    text-align: center;
+    background-color: var(--utah-flag-blue);
+    color: var(--light-text);
+    padding: 5px;
+    position: relative;
+}
+
+section ul {
+    margin: 0 2rem;
+}
+
+section {
+    column-span: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .8rem;
+    text-align: center;
+    background-color: var(--utah-flag-yellow);
+
+    border-radius: .1rem;
+
+    padding: .6rem;
+    width: 100%;
+
+    align-self: center;
+
+}
+
+section h2 {
+    grid-column: 1/3;
+}
+
+.hero {
+    grid-column: 1/2;
+    align-self: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.weather {
+    width: 10rem;
+    height: auto;
+    grid-column: 1/3;
+    margin: 0 auto;
+}
+
+.weather-large {
+    display: none;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.value {
+    text-align: left;
+}
+
+.label {
+    font-weight: bold;
+    text-align: right;
+}
