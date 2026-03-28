@@ -44,10 +44,9 @@
         display: none;
     }
 
-    .weather-large {
-        display: block;
+    .weather-title::after {
+        content: "⛅";
     }
-
 }
 
 @media screen and (min-width: 1200px) {
