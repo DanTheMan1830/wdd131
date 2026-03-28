@@ -88,7 +88,7 @@ footer {
 }
 
 section {
-    column-span: 1;
+    grid-column: 1/2;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: .8rem;
