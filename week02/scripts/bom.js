@@ -4,7 +4,7 @@ const list = document.querySelector('#list');
 
 
 
-button.addEventListener('button', function () {
+button.addEventListener('click', function () {
 
     if (input.value.trim() !== '') {
 

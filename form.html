@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="Product review form page for week 5, allowing customer to provide feedback.">
+    <meta name="author" content="Daniel Lyon">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Hepta+Slab:wght@1..900&family=Roboto&family=Slabo+27px&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <fieldset>
+                <div class="formDiv">
+                    <label for="productName">Product Name</label><br>
+                    <select name="productName" id="productName" required class="customSelect">
+                        <option value="" selected disabled>Select a Product ...</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset class="overallRating">
+                <legend>Overall Rating</legend>
+
+                <div class="starRating"><label for="oneStar">★</label><input type="radio" name="rating" id="oneStar"
+                        required></div>
+                <div class="starRating"><label for="twoStar">★★</label><input type="radio" name="rating" id="twoStar"
+                        required></div>
+                <div class="starRating"><label for="threeStar">★★★</label><input type="radio" name="rating"
+                        id="threeStar" required></div>
+                <div class="starRating"><label for="fourStar">★★★★</label><input type="radio" name="rating"
+                        id="fourStar" required></div>
+                <div class="starRating">
+                    <label for="fiveStar">★★★★★</label><input type="radio" name="rating" id="fiveStar" required>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <div class="formDiv"><label for="installDate">Date of Installation</label><br>
+                    <input type="date" name="installDate" id="installDate" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Which features did you find useful in the product?<br>
+                    <i>(Check all that Apply)</i>
+                </legend>
+                <div class="formDiv checkLabel">
+                    <input type="checkbox" name="durability" id="durability">
+                    <label for="durability">Durability</label>
+                    <br>
+                    <input type="checkbox" name="easeOfUse" id="easeOfUse">
+                    <label for="easeOfUse">Ease of Use</label>
+                    <br>
+                    <input type="checkbox" name="performance" id="performance">
+                    <label for="performance">Performance</label>
+                    <br>
+                    <input type="checkbox" name="design" id="design">
+                    <label for="design">Design</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="formDiv">
+                    <label for="writtenReview">Written Review <span class="optionalLabel">(Optional)</span></label>
+
+                    <textarea name="writtenReview" id="writtenReview" rows="4"
+                        placeholder="Leave your review here..."></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="formDiv">
+                    <label for="userName">Your Name <span class="optionalLabel">(Optional)</span></label>
+                    <br>
+                    <input type="text" name="userName" id="userName" autocomplete="cc-name">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="formDiv">
+                    <button type="submit" value="submit">Post Review</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> ♜ Daniel Lyon ♜ UT</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
