@@ -1,0 +1,182 @@
+:root {
+    --light-text: #fff;
+    --header-color: #690500;
+    --navigation-color: #452103;
+    --hover-color: #7c5605;
+}
+
+.slabo-27px-regular {
+    font-family: "Slabo 27px", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.geist-dannyboy {
+    font-family: "Geist", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    font-family: "slabo-27px-regular", serif;
+}
+
+/* basic **************************/
+header {
+    font-family: "slabo-27px-regular", serif;
+    background-color: var(--header-color);
+    display: grid;
+    grid-gap: 1rem;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 30px #333;
+    color: white;
+}
+
+header h1 {
+    color: white;
+}
+
+header,
+main {
+    margin: 0 auto;
+}
+
+nav {
+    background-color: var(--navigation-color);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    font-family: "slabo-27px-regular", serif;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+nav a:hover {
+    text-decoration: wavy;
+    font-style: italic;
+    background-color: var(--hover-color);
+    color: var(--light-text);
+    font-weight: 700;
+}
+
+/* Hamburger Stuff ***********************************/
+
+#menu {
+    display: none;
+}
+
+@media (max-width: 740px) {
+
+    #menu {
+        display: block;
+        font-size: 2.1rem;
+        border: 0;
+        background: none;
+        color: black;
+        position: absolute;
+        top: 1.5rem;
+        left: 1rem;
+    }
+
+    #menu::before {
+        content: "☰";
+        color: white;
+    }
+
+    #menu.open::before {
+        content: "✖";
+        color: white;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        list-style: none;
+        background-color: var(--navigation-color);
+        color: #fff;
+    }
+
+    .navigation a {
+        display: none;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+
+    }
+
+    .navigation a:hover {
+        background-color: var(--hover-color);
+        color: var(--light-text);
+    }
+
+    .open a {
+        display: block;
+    }
+
+}
+
+/* main stuff ***********************************/
+
+main {
+    font-family: "geist-dannyboy", sans-serif;
+    margin: 1rem auto;
+    max-width: 1200px;
+    padding: 0.5rem;
+}
+
+div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-gap: 25px;
+    place-items: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin: 0.2rem;
+}
+
+figcaption {
+    font-size: .9rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.4rem;
+    padding: .4rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.1rem;
+    padding: .4rem;
+    margin-bottom: .5rem;
+    text-align: center;
+}
+
+section {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 30px #333;
+    text-align: center;
+    margin: .5rem 0;
+}
