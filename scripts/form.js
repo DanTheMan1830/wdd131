@@ -53,6 +53,17 @@ products.forEach(product => {
 const button = document.querySelector('button');
 const form = document.querySelector('form');
 
+let reviewCount = getReviewCount() || 0;
+
 button.addEventListener('click', function () {
 
 });
+
+form.addEventListener('submit', function () {
+    reviewCount++;
+    setReviewCount();
+});
+
+function setReviewCount() { localStorage.setItem('userReviewCount', JSON.stringify(reviewCount)); };
+
+function getReviewCount() { return JSON.parse(localStorage.getItem('userReviewCount')); };
