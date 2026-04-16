@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Winter War</title>
-    <meta name="description" content="Provides information about the Finnish Winter War, and provides an email list.">
+    <title>Winter War-Contact</title>
+    <meta name="description" content="Provides a signup for the newsletter and other information.">
     <meta name="author" content="Daniel Lyon">
     <link rel="stylesheet" href="styles/winterwar.css">
     <link rel="stylesheet" href="styles/winterwar-large.css">
@@ -32,17 +32,12 @@
 
     <main>
         <h1>Contact Us</h1>
-        <div>
+
+        <div class="page-contact">
+            <p>If you would like to learn more, get in contact with us, or make a request, we'd love to hear from you!
+            </p>
 
             <form action="review.html" method="get">
-                <fieldset>
-                    <div class="formDiv">
-                        <label for="userName">Your Name</label>
-                        <br>
-                        <input type="text" name="userName" id="userName" autocomplete="cc-name" required>
-                    </div>
-                </fieldset>
-
                 <fieldset>
                     <div class="formDiv">
                         <label for="userName">Email Address</label>
@@ -50,26 +45,58 @@
                         <input type="text" name="email" id="email" autocomplete="email" required>
                     </div>
                 </fieldset>
-
                 <fieldset>
                     <div class="formDiv">
-                        <label for="writtenReview">Notes <span class="optionalLabel">(Optional)</span></label>
-
-                        <textarea name="additionalNotes" id="additionalNotes" rows="4"
-                            placeholder="I'd like to request..."></textarea>
+                        <label for="userName">Your Name <span class="optionalLabel">(Optional)</span></label>
+                        <br>
+                        <input type="text" name="userName" id="userName" autocomplete="cc-name">
                     </div>
                 </fieldset>
-
+                <fieldset>
+                    <legend>Select each of the following that apply:</legend>
+                    <div class="formDiv checkLabel">
+                        <input type="checkbox" name="war-history" id="war-history">
+                        <label for="war-history">I'm interested in learning about history of the Winter War</label>
+                        <br>
+                        <input type="checkbox" name="battle-history" id="battle-history">
+                        <label for="battle-history">I'm interested in learning about battles of the Winter
+                            War</label>
+                        <br>
+                        <input type="checkbox" name="Häyhä-history" id="Häyhä-history">
+                        <label for="Häyhä-history">I'm interested in learning about Simo Häyhä</label>
+                        <br>
+                        <input type="checkbox" name="mailingList" id="mailingList">
+                        <label for="mailingList">I'd like to sign up for the newsletter</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="formDiv">
+                        <label for="additionalNotes">Notes <span class="optionalLabel">(Optional)</span></label>
+                        <textarea name="additionalNotes" id="additionalNotes" rows="4"
+                            placeholder="Leave your message here..."></textarea>
+                    </div>
+                </fieldset>
                 <fieldset>
                     <div class="formDiv">
                         <button type="submit" value="submit">Submit</button>
                     </div>
                 </fieldset>
             </form>
+            <div class="hero">
+                <figure>
+                    <picture>
+                        <source srcset="images/TWW-Finnish-Troops.webp" media="(min-width:1000px)">
+                        <img src="images/TWW-Finnish-Troops-small.jpg" alt="Finnish troops traveling via skiis."
+                            loading="lazy">
+                    </picture>
+                    <figcaption><span class="pic-caption">Image Reference:
+                            <a
+                                href="https://www.thecollector.com/winter-war-soviet-invasion-finland/">TheCollector.com</a></span>
+                    </figcaption>
+                </figure>
+            </div>
         </div>
-        <div>
 
-        </div>
 
 
     </main>
