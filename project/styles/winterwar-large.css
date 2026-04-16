@@ -9,7 +9,8 @@
 
     section {
         position: absolute;
-        width: fit-content
+        width: fit-content;
+        grid-template-columns: 1fr auto;
     }
 
     .dataContainer {
@@ -25,10 +26,30 @@
     .mobile-only {
         display: none;
     }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    nav ul {
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+
+    nav a {
+        flex: 1 1 100%;
+    }
 }
 
 @media screen and (min-width: 1200px) {
     section {
         font-size: larger;
+    }
+
+    nav ul {
+        justify-content: flex-start;
+        flex-direction: row;
     }
 }

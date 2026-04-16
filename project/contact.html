@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Winter War</title>
+    <meta name="description" content="Provides information about the Finnish Winter War, and provides an email list.">
+    <meta name="author" content="Daniel Lyon">
+    <link rel="stylesheet" href="styles/winterwar.css">
+    <link rel="stylesheet" href="styles/winterwar-large.css">
+    <script src="scripts/winterwar.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Hepta+Slab:wght@1..900&family=Roboto&family=Slabo+27px&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1><span id="site-title">The Winter War</span></h1>
+        <button id="menu" aria-label="Hamburger Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" title="Home" id="Home">Home</a></li>
+                <li><a href="white-death.html" title="White-Death" id="White-Death">Bio: Simo</a></li>
+                <li><a href="contact.html" title="Contact" id="Contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+        <div>
+
+            <form action="review.html" method="get">
+                <fieldset>
+                    <div class="formDiv">
+                        <label for="userName">Your Name</label>
+                        <br>
+                        <input type="text" name="userName" id="userName" autocomplete="cc-name" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="formDiv">
+                        <label for="userName">Email Address</label>
+                        <br>
+                        <input type="text" name="email" id="email" autocomplete="email" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="formDiv">
+                        <label for="writtenReview">Notes <span class="optionalLabel">(Optional)</span></label>
+
+                        <textarea name="additionalNotes" id="additionalNotes" rows="4"
+                            placeholder="I'd like to request..."></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="formDiv">
+                        <button type="submit" value="submit">Submit</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div>
+
+        </div>
+
+
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> ♜ Daniel Lyon ♜ UT</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
