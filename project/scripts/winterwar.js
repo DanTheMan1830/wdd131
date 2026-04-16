@@ -60,3 +60,28 @@ warFacts.forEach(entry => {
 // Local Storage Stuff
 //////////////////////
 
+document.addEventListener('DOMContentLoaded', () => {
+
+    let requestSubmitted = getRequestSubmission() || 0;
+
+    const form = document.querySelector('form');
+
+    form.addEventListener('submit', function () {
+        requestSubmitted = 1;
+        setRequestSubmission();
+    });
+
+    function setRequestSubmission() { localStorage.setItem('userRequestSubmitted', JSON.stringify(requestSubmitted)); };
+
+    function getRequestSubmission() { return JSON.parse(localStorage.getItem('userRequestSubmitted')); };
+
+    if (requestSubmitted) {
+        document.querySelector('form').style.display = "none";
+        document.querySelector('.ifSubmitted').style.display = "block";
+    }
+    else {
+        document.querySelector('form').style.display = "block";
+        document.querySelector('.ifSubmitted').style.display = "none";
+    }
+
+});

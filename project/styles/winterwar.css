@@ -366,6 +366,7 @@ form {
     width: 500px;
     align-self: center;
     margin: 0 auto;
+    display: block;
 }
 
 fieldset {
@@ -436,4 +437,8 @@ main button:hover {
     color: rgb(62, 62, 219);
     font-weight: 500;
     font-size: .95rem;
+}
+
+.ifSubmitted {
+    display: none;
 }
