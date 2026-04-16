@@ -1,2 +1,34 @@
 /* Larger Views ******************************/
-@media screen and (min-width: 740px) {}
+@media screen and (min-width: 740px) {
+
+    header,
+    main,
+    footer {
+        max-width: 1280px;
+    }
+
+    section {
+        position: absolute;
+        width: fit-content
+    }
+
+    .dataContainer {
+        left: 40px;
+        top: 40px;
+    }
+
+    .numberContainer {
+        right: 40px;
+        top: 200px;
+    }
+
+    .mobile-only {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    section {
+        font-size: larger;
+    }
+}
